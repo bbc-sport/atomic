@@ -27,7 +27,7 @@
       success: function () {},
       error: function () {}
     };
-    var XHR = root.XMLHttpRequest || ActiveXObject;
+    var XHR = window.XMLHttpRequest || ActiveXObject;
     var request = new XHR('MSXML2.XMLHTTP.3.0');
     request.open(type, url, true);
     request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
